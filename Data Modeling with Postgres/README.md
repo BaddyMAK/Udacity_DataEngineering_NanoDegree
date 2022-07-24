@@ -26,9 +26,12 @@ this project aims to create a Postgres database with tables and ETL pipeline to 
 - we have chosen postgres as database because our data is structured means each field in each json file has only one value so it is easy to convert those json files into tables. 
 - The star schema that uses a single large fact table (songplays) to store transactional or measured data, and one or more smaller dimensional tables that store attributes about the data.
 - The ETL pipeline consists on :  
+
         - Extracting the data from the json Repositories 
         - Transform this data to satisfy the requirements of each of the five tables
         - Insert or Load the records into the Tables 
+        
+        
 - The analytics teams wants to implement this architecture to understand what songs users are listening to. Therefore, we have used table to describe songs details, another table to describe users behaviors and the third table stores information details about artists. The fourth table : songplays resumes relationship between users, songs and artists. 
 - The time table is useful for analysis during certain periods like weekend or weekdays, holidays etc. 
 
